@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+     <EditText
+        android:id="@+id/txtItem2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter an Item"
+        android:inputType="text" />
+    
+    <Button
+        android:id="@+id/btnAdd2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:layout_toRightOf="@id/txtItem2"
+    />
+ 
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItem2"
+    />
+    
+    <Button
+        android:id="@+id/btnToGrocery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Move To Pantry"
+        android:layout_above="@+id/btnDel2"
+        />
+    
+    <Button
+        android:id="@+id/btnDel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Items"
+        android:layout_alignParentBottom="true"
+       />
+ 
+
+</RelativeLayout>
